@@ -26,3 +26,6 @@ Press B and C to cycle up and down through the list of food items.
 
 ## PCB
 <img width="4096" height="2358" alt="3D_PCB1_2026-06-06" src="https://github.com/user-attachments/assets/98e68af8-8aa9-421a-bbf5-b77f8a298d87" />
+
+## Schematic
+<img width="1031" height="431" alt="Screenshot 2026-06-06 at 12 12 31" src="https://github.com/user-attachments/assets/5f7a58aa-4e43-4a2b-b0f1-37d71631165a" />
