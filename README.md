@@ -2,6 +2,12 @@
 
 ~30% of food in the US is wasted. This project is a gadget that magnetically attaches to your fridge to remind you what food is close to expiring.
 
+## Usage
+To add a food item:
+Show your food item to the camera and press the A button. Then, enter the expiry date of the item with the number pad. Then, confirm by pressing the A button again. Press D to cancel.
+
+Press B and C to cycle up and down through the list of food items.
+
 ## BOM
 - https://www.aliexpress.com/item/1005007133350270.html 4.2" E-Ink Screen ($30.45)
 - https://www.aliexpress.com/item/1005008858265927.html D10x3mm Ferrite Fridge Magnet ($11.24)
