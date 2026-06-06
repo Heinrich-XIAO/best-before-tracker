@@ -8,6 +8,9 @@ Show your food item to the camera and press the A button. Then, enter the expiry
 
 Press B and C to cycle up and down through the list of food items.
 
+## Motivation
+Food waste is a huge problem in the world, and a large part of it is the amount of food that is left at the back of the fridge to expire. This device is designed to remind you every time you return to your fridge of forgotten items.
+
 ## BOM
 - https://www.aliexpress.com/item/1005007133350270.html 4.2" E-Ink Screen ($30.45)
 - https://www.aliexpress.com/item/1005008858265927.html D10x3mm Ferrite Fridge Magnet ($11.24)
