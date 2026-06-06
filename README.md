@@ -1,6 +1,6 @@
 # Best Before Tracker
 
-~30% of food in the US is wasted. This project is a gadget that magnetically attaches to your fridge to remind you what food is close to expiring.
+~30% of food in the US is wasted and sent to landfills. This project is a gadget that magnetically attaches to your fridge to remind you what food is close to expiring.
 
 ## Usage
 To add a food item:
