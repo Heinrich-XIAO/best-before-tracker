@@ -12,6 +12,9 @@ const char keymap[ROWS][COLS] = {
 };
 
 void setup() {
+  Serial1.setTX(12);  // GP12
+  Serial1.setRX(13);  // GP13
+  Serial1.begin(115200);
   Serial.begin(115200);
 
   // Rows are outputs
@@ -106,9 +109,11 @@ void loop() {
 
     if (key == 'A' && state == START_MENU) {
       state = CAMERA;
+      Serial1.print("PREP");
     }
     if (key == 'A' && state == CAMERA) {
       state = ENTER_DATE;
+      Serial1.print("SHOOT");
     }
     
     if (key == 'A' && state == ENTER_DATE) {
@@ -119,59 +124,6 @@ void loop() {
           date[i] = resetVals[i];
       }
     }
-
-
-    // switch (key) {
-    //   case '1':
-    //   Serial.println('1');
-    //   break;
-    //   case '2':
-    //   Serial.println('2');
-    //   break;
-    //   case '3':
-    //   Serial.println('3');
-    //   break;
-    //   case '4':
-    //   Serial.println('4');
-    //   break;
-    //   case '5':
-    //   Serial.println('5');
-    //   break;
-    //   case '6':
-    //   Serial.println('6');
-    //   break;
-    //   case '7':
-    //   Serial.println('7');
-    //   break;
-    //   case '8':
-    //   Serial.println('8');
-    //   break;
-    //   case '9':
-    //   Serial.println('9');
-    //   break;
-    //   case '0':
-    //   Serial.println('0');
-    //   break;
-    //   case 'A':
-    //   Serial.println('A');
-    //   break;
-    //   case 'B':
-    //   Serial.println('B');
-    //   break;
-    //   case 'C':
-    //   Serial.println('C');
-    //   break;
-    //   case 'D':
-    //   Serial.println('D');
-    //   break;
-    //   case '#':
-    //   Serial.println('#');
-    //   break;
-    //   case '*':
-    //   Serial.println('*');
-    //   break;
-    // }
-
   }
 
   lastKey = key;
