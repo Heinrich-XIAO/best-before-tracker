@@ -225,6 +225,23 @@ void shoot_and_save() {
   esp_camera_fb_return(fb);
 }
 
+void goToSleep() {
+  // Deinitialize camera to free memory before sleep
+  esp_camera_deinit();
+  
+  // Turn off the ESP32-CAM white on-board LED (flash) connected to GPIO 4
+  pinMode(FLASH_LED_PIN, OUTPUT);
+  digitalWrite(FLASH_LED_PIN, LOW);
+  rtc_gpio_hold_en(GPIO_NUM_4);
+
+  Serial.println("Going to sleep now");
+  Serial.flush();
+  
+  delay(100);
+  
+  esp_deep_sleep_start();
+}
+
 void setup() {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);  // Disable brownout detector
 
@@ -250,23 +267,6 @@ void setup() {
   delay(500);
   
   goToSleep();
-}
-
-void goToSleep() {
-  // Deinitialize camera to free memory before sleep
-  esp_camera_deinit();
-  
-  // Turn off the ESP32-CAM white on-board LED (flash) connected to GPIO 4
-  pinMode(FLASH_LED_PIN, OUTPUT);
-  digitalWrite(FLASH_LED_PIN, LOW);
-  rtc_gpio_hold_en(GPIO_NUM_4);
-
-  Serial.println("Going to sleep now");
-  Serial.flush();
-  
-  delay(100);
-  
-  esp_deep_sleep_start();
 }
 
 void loop() {
