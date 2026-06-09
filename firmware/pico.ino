@@ -109,7 +109,7 @@ void loop() {
 
     if (key == 'A' && state == START_MENU) {
       state = CAMERA;
-      Serial1.print("PREP");
+      Serial1.write(0x01);
     }
     if (key == 'A' && state == CAMERA) {
       state = ENTER_DATE;

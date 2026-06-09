@@ -239,6 +239,7 @@ void goToSleep() {
   
   delay(100);
   
+  esp_sleep_enable_ext0_wakeup(16, 0);
   esp_deep_sleep_start();
 }
 
@@ -260,12 +261,9 @@ void setup() {
 
   // Wait a moment for camera to stabilize
   delay(1000);
-
   shoot_and_save();
-  
   // Brief delay before sleep
   delay(500);
-  
   goToSleep();
 }
 
@@ -275,7 +273,18 @@ void loop() {
         cmd.trim();
 
         if (cmd == "SHOOT") {
-            sendImage();
+          eeprom_init();
+          sd_card_init();
+
+          camera_config();
+          camera_init();
+
+          // Wait a moment for camera to stabilize
+          delay(1000);
+          shoot_and_save();
+          // Brief delay before sleep
+          delay(500);
+          goToSleep();
         }
     } else {
         Serial.println("Serial1 not available.")
