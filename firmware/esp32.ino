@@ -247,7 +247,6 @@ void setup() {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);  // Disable brownout detector
 
   Serial.begin(115200);
-  Serial.println("ESP32-CAM Photo Capture Starting...");
 
   Serial1.begin(115200);
   Serial1.setTX(0);
@@ -262,6 +261,7 @@ void loop() {
         cmd.trim();
 
         if (cmd == "SHOOT") {
+          Serial.println("Capturing photo...");
           eeprom_init();
           sd_card_init();
 
@@ -271,6 +271,8 @@ void loop() {
           // Wait a moment for camera to stabilize
           delay(1000);
           shoot_and_save();
+
+          Serial.println("Photo Captured...");
           // Brief delay before sleep
           delay(500);
           goToSleep();
