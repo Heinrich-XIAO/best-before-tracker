@@ -253,17 +253,6 @@ void setup() {
   Serial1.setTX(0);
   Serial1.setRX(16);
 
-  eeprom_init();
-  sd_card_init();
-
-  camera_config();
-  camera_init();
-
-  // Wait a moment for camera to stabilize
-  delay(1000);
-  shoot_and_save();
-  // Brief delay before sleep
-  delay(500);
   goToSleep();
 }
 
