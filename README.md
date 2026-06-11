@@ -29,7 +29,8 @@ Go to BOM.csv for the Bill of Materials
 
 ## Assembled 3D Model
 <img width="905" height="540" alt="Screenshot 2026-06-06 at 11 41 42" src="https://github.com/user-attachments/assets/dd55f1f2-f8a7-4a38-8366-082197c4c82d" />
-[Onshape URL](https://cad.onshape.com/documents/8ee8f266d123a24e5a0ce496/w/151140d60200875ea61c9eed/e/18a74606bdcc9369348646ee?renderMode=0&uiState=6a249579d641e38a22ea1bbf)
+
+https://cad.onshape.com/documents/8ee8f266d123a24e5a0ce496/w/151140d60200875ea61c9eed/e/18a74606bdcc9369348646ee?renderMode=0&uiState=6a249579d641e38a22ea1bbf
 
 ## PCB
 <img width="4096" height="2358" alt="3D_PCB1_2026-06-06" src="https://github.com/user-attachments/assets/98e68af8-8aa9-421a-bbf5-b77f8a298d87" />
