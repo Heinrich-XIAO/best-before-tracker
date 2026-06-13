@@ -17,7 +17,8 @@ foodsavr uses two microcontrollers. The ESP-32 CAM is used for the camera, but s
 4. Plop the top case on the display so that the screw holes of the display line up.
 5. Use the M3 nuts and bolts to secure the display.
 6. For the two corners on the right, insert the M3 heatset inserts into the holes.
-7. Finally, fasten the bottom case so that the PCB rests in the tray with the M3.
+7. Add a thin layer of cyanoacryalte glue around the bottom of the magnet holes. Then, insert the magnets.
+8. Finally, fasten the bottom case so that the PCB rests in the tray with the M3.
 
 ## Motivation
 I designed this because I got tired of leaving food at the back of my fridge to rot. Especially, since I'd save my favourite foods for later, and yet forget about them until expiry. This project reminds you before they expire so that you never leave food in the back of your fridge for too long.
